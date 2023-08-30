@@ -1,0 +1,35 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: azure;
+  }
+  
+  nav .name {
+  
+  }
+  
+  nav ul {
+    display: flex inline;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 20px;
+  }
+  
+  nav ul a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .hero{
+    display: inline-block;
+    width: 100%;
+    height: 25vh;
+    background-image: url(https://i.pinimg.com/736x/92/76/c2/9276c2ed2ce3ee96a11b48545ad6124a.jpg);
+    background-size: cover;
+    overflow: none;
+  }
+  
+  .hero img{
+    width: 100%;
+  }
