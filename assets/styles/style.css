@@ -24,7 +24,7 @@ nav {
   .hero{
     display: inline-block;
     width: 100%;
-    height: 25vh;
+    height: 200px;
     background-image: url(https://i.pinimg.com/736x/92/76/c2/9276c2ed2ce3ee96a11b48545ad6124a.jpg);
     background-size: cover;
     overflow: none;
@@ -38,4 +38,77 @@ nav {
     left: 75%;
     top: 30px;
     overflow: hidden;
+  }
+  article{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width: 100%;
+    height: 300px;
+    background-color: beige;
+    margin: 10px 0;
+  }
+  
+  article .aside{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    background-color: aquamarine;
+    border-right: 5px solid pink;;
+  }
+  article h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 48px;
+    text-decoration: underline;
+    padding: 10px;
+  }
+  
+  article .content{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    background-color: blueviolet;
+    right: 0%;
+    padding: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    overflow: hidden;
+  }
+  
+  article .content p{
+  }
+  
+  .main-info{
+  
+  }
+
+  @media screen and (max-width: 580px) {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: red;
+    }
+    .hero img{
+      position: relative;
+      height: 140px;
+      width: 150px;
+      border-radius: 50%;
+      left: 65%;
+      top: 30px;
+      overflow: hidden;
+    }
+    .hero{
+      display: inline-block;
+      width: 100%;
+      height: 125px;
+      background-image: url(https://i.pinimg.com/736x/92/76/c2/9276c2ed2ce3ee96a11b48545ad6124a.jpg);
+      background-size: cover;
+      overflow: none;
+    }
   }
