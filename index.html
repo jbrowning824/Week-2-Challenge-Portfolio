@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/base16/tomorrow-night.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -19,6 +20,13 @@
     </nav>
     <header>
       <div class="hero">
+        <div>
+            <pre class="css-typing"><code class="language-typescript" id="typewriter"><p>import { Injectable } from '@angular/core';</p>
+<p>import { Injectable } from '@angular/core';</p>
+<p>import { HttpClient, HttpHeaders } from '@angular/common/http';</p>
+
+            </code></pre>
+        </div>
         <img
           src="./assets/images/me.jpg"
           alt="hero image"
@@ -66,5 +74,11 @@ Sed libero ex, mattis quis eros eget, suscipit lobortis est. Nam ultrices ex ele
       <!-- contact me -->
     </footer>
     <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+
+    <script>hljs.highlightAll();</script>
   </body>
 </html>

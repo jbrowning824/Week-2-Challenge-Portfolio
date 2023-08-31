@@ -20,16 +20,100 @@ nav {
     text-decoration: none;
     color: black;
   }
+
+  pre{
+    background-color: black;
+  }
   
   .hero{
     display: inline-block;
     width: 100%;
-    height: 200px;
-    background-image: url(https://i.pinimg.com/736x/92/76/c2/9276c2ed2ce3ee96a11b48545ad6124a.jpg);
-    background-size: cover;
-    overflow: none;
+    height: 300px;
+    background-color: black;
+    overflow: hidden;
+  }
+
+  #typwriter {
+    border-right: .15em solid orange;
+    font-family: "Courier";
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 7.3em;
+    -webkit-animation: type 2s steps(40, end);
+    animation: type 2s steps(40, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
   }
   
+
+  @keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  
+  @-webkit-keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  
+  @keyframes type3 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes type3 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  @-webkit-keyframes blink {
+    50% {
+      border-color: tranparent;
+    }
+  }
+
   .hero img{
     position: relative;
     height: 240px;
@@ -53,6 +137,7 @@ nav {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
+    text-align: right;
     align-items: center;
     width: 30%;
     height: 100%;
@@ -112,3 +197,24 @@ nav {
       overflow: none;
     }
   }
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.example {
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+  background: -o-linear-gradient(top, white, black);
+  background: linear-gradient(to bottom, white, black);
+}
