@@ -37,4 +37,5 @@ nav {
     border-radius: 50%;
     left: 75%;
     top: 30px;
+    overflow: hidden;
   }
