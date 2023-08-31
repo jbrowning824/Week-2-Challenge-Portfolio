@@ -21,97 +21,15 @@ nav {
     color: black;
   }
 
-  pre{
-    background-color: black;
-  }
+
   
   .hero{
     display: inline-block;
     width: 100%;
-    height: 300px;
-    background-color: black;
+    height: 350px;
+    background-image: url(https://www.digitaland.tv/wp-content/uploads/2016/03/banner_developer-.jpg);
+    background-size: cover;
     overflow: hidden;
-  }
-
-  #typwriter {
-    border-right: .15em solid orange;
-    font-family: "Courier";
-    font-size: 14px;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 7.3em;
-    -webkit-animation: type 2s steps(40, end);
-    animation: type 2s steps(40, end);
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-  }
-  
-
-  @keyframes type2 {
-    0% {
-      width: 0;
-    }
-    1% {
-      opacity: 1;
-    }
-    99.9% {
-      border-right: .15em solid orange;
-    }
-    100% {
-      opacity: 1;
-      border: none;
-    }
-  }
-  
-  @-webkit-keyframes type2 {
-    0% {
-      width: 0;
-    }
-    1% {
-      opacity: 1;
-    }
-    99.9% {
-      border-right: .15em solid orange;
-    }
-    100% {
-      opacity: 1;
-      border: none;
-    }
-  }
-  
-  @keyframes type3 {
-    0% {
-      width: 0;
-    }
-    1% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  @-webkit-keyframes type3 {
-    0% {
-      width: 0;
-    }
-    1% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-  }
-  @-webkit-keyframes blink {
-    50% {
-      border-color: tranparent;
-    }
   }
 
   .hero img{
@@ -125,11 +43,11 @@ nav {
   }
   article{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: flex-start;
     width: 100%;
     height: 300px;
-    background-color: beige;
+    background-color: white;
     margin: 10px 0;
   }
   
@@ -139,10 +57,10 @@ nav {
     justify-content: flex-end;
     text-align: right;
     align-items: center;
-    width: 30%;
+    width: 300px;
     height: 100%;
-    background-color: aquamarine;
-    border-right: 5px solid pink;;
+    background-color: white;
+    border-right: 5px solid lightcoral;;
   }
   article h1{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -157,7 +75,7 @@ nav {
     align-items: center;
     width: 70%;
     height: 100%;
-    background-color: blueviolet;
+    background-color: white;
     right: 0%;
     padding: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -165,6 +83,31 @@ nav {
     overflow: hidden;
   }
   
+  .work{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    background-color: aqua;
+  }
+  .project{
+    position: relative;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background-color:blueviolet;
+    margin: 20px;
+  }
+.projects{
+  height: 100%;
+}
+.projects div:nth-child(1){
+  width: 100%;
+  height: 300px;
+}
+.projects .aside{
+  height: 300px;
+}
   article .content p{
   }
   
@@ -197,24 +140,3 @@ nav {
       overflow: none;
     }
   }
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-.example {
-  display: -ms-grid;
-  display: grid;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
-  background: -o-linear-gradient(top, white, black);
-  background: linear-gradient(to bottom, white, black);
-}
