@@ -21,7 +21,10 @@ nav {
     color: black;
   }
 
-
+  .StreamLine-Cinemas img{
+    width: 200px;
+    aspect-ratio: 1.5 / 1;
+  }
   
   .hero{
     display: inline-block;
@@ -54,7 +57,7 @@ nav {
   article .aside{
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
     text-align: right;
     align-items: center;
     width: 300px;
@@ -87,7 +90,7 @@ nav {
     position: relative;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
     background-color: aqua;
   }
   .project{
@@ -102,7 +105,7 @@ nav {
   height: 100%;
 }
 .projects div:nth-child(1){
-  width: 100%;
+  width: 300px;
   height: 300px;
 }
 .projects .aside{
